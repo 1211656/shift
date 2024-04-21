@@ -1,0 +1,95 @@
+.background-image {
+    position: fixed; /* ou absolute */
+    top: 0;
+    left: 0;
+    width: 100%; /* ajusta a largura conforme a tela */
+    height: 100%; /* ajusta a altura conforme a tela */
+    z-index: -1; /* coloca a imagem atrás de todo o conteúdo */
+    /*opacity: 0.5; /* opcional: ajusta a opacidade da imagem */
+}
+
+.logo-image {
+    position: absolute; /* ou fixed */
+    top: 50px; /* ajusta a posição vertical */
+    right: 90px; /* ajusta a posição horizontal */
+    width: 150px; /* ajusta a largura */
+    height: auto; /* ajusta a altura automaticamente */
+    z-index: 1; /* coloca a imagem à frente do conteúdo */
+}
+
+.back-button{
+    position: absolute;
+    top: 10%; /* ajusta a posição vertical */
+    left: 6%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.username{
+    position: absolute;
+    right: 26%;
+    top: 20%;
+}
+
+.email{
+    position: absolute;
+    right: 26%;
+    top: 28%;
+}
+
+.pass{
+    position: absolute;
+    right: 26%;
+    top: 36%;
+}
+
+.editar-button{
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-top: 50px; /* ajuste a margem superior conforme necessário */
+    right: 35%; /* ajuste a margem esquerda conforme necessário */
+    top: 48%; /* ajusta a posição vertical */
+    /*margin: 10px; /* Espaçamento entre as imagens */
+    max-width: 530px; /* Largura máxima das imagens */
+    border:none;
+    height: 80px; /* Mantenha a proporção da altura */
+}
+
+
+
+.terminar-sessao-button{
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-top: 50px; /* ajuste a margem superior conforme necessário */
+    right: 35%; /* ajuste a margem esquerda conforme necessário */
+    top: 61%; /* ajusta a posição vertical */
+    /*margin: 10px; /* Espaçamento entre as imagens */
+    max-width: 530px; /* Largura máxima das imagens */
+    border:none;
+    height: 80px; /* Mantenha a proporção da altura */
+}
+
+
+
+.apagar-conta-button{
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-top: 50px; /* ajuste a margem superior conforme necessário */
+    right: 35%; /* ajuste a margem esquerda conforme necessário */
+    top: 74%; /* ajusta a posição vertical */
+    /*margin: 10px; /* Espaçamento entre as imagens */
+    max-width: 530px; /* Largura máxima das imagens */
+    border:none;
+    height: 80px; /* Mantenha a proporção da altura */
+}
+

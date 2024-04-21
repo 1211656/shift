@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='profile_page.css') }}?v=2">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='profile_page.jpg') }}" class="background-image">
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+
+
+    <form action="{{ url_for('home_page', username=user.username) }}" method="get">
+        <button id="back-button" class="back-button">Anterior</button>
+    </form>
+
+    <p class="username">{{ user.username }}</p>
+    <p class="pass">{{ user.password }}</p>
+    <p class="email">{{ user.email }}</p>
+    <form action="/altera_valores/{{ user.id }}" method="POST" id="form-edicao" style="display: none;">
+        <label for="username">Username:</label>
+        <input type="username" name="username" value="{{ user.username }}" disabled>
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="{{ user.password }}" disabled>
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="{{ user.email }}" disabled>
+        <input type="submit" value="Confirmar">
+    </form>
+
+    <button id="editar-button" class="editar-button">lsxawwadwadadawdwdwdwdwdwadawdwadawdawddawdawddadawdawdawdwadaw</button>
+    <form action="/",methods=['GET']>
+        <button class ="terminar-sessao-button">lsxawwadwadadawdwdwdwdwdwadawdwadawdawddawdawddadawdawdawdwadaw</button>
+    </form>
+    <form action="/apagar_conta/{{ user.id }}" method = "post">
+        <button class ="apagar-conta-button">lsxawwadwadadawdwdwdwdwdwadawdwadawdawddawdawddadawdawdawdwadaw</button>
+    </form>
+
+    <script>
+
+    document.getElementById('editar-button').addEventListener('click', function() {
+    // Mostrar o formulário de edição
+    document.getElementById('form-edicao').style.display = 'block';
+
+    // Habilitar os campos de entrada
+    var inputs = document.querySelectorAll('#form-edicao input');
+    inputs.forEach(function(input) {
+        input.removeAttribute('disabled');
+    });
+
+    // Esconder o botão de edição
+    //this.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home_page.css') }}?v=2">
+</head>
+<body class="body">
+    <img src="{{ url_for('static', filename='home_page.jpg') }}" class="background-image">
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+
+    <form action="/" method="get">
+        <button id="back-button" class="back-button">Anterior</button>
+    </form>
+
+
+
+
+
+
+
+
+    {% set height_percentage = 100 %}
+
+{% for advertises in lista_advertises %}
+    {% set height_percentage = height_percentage * 0.8 %} {# Reduz a altura em 20% a cada iteração #}
+    <div class="ad-container" style="position: relative; display: block; margin-bottom: 20px; height: {{ height_percentage }}%;">
+        <img src="{{ url_for('static', filename=advertises.url_main) }}" class="mcdonalds" style="width: 100%; height: 100%; ">
+        <form action="/questionario/{{ advertises.id }}/{{ username }}" method = "get">
+            <button id="mcdonalds" class="title-button" style="position: absolute; bottom: 30px; left: 0%; transform: translateX(0%);">
+                {{ advertises.title }} <br> <br> {{ advertises.description }}<br><br> Prazo Final: {{ advertises.expirationDate }}</button>
+        </form>
+            <br>
+    </div>
+{% endfor %}
+
+    <form action="/home_page_category/{{username}}/" method="get">
+        <div class="dropdown">
+            <button class="dropbtn">ALL</button>
+            <div class="dropdown-content">
+                <button type="submit" name="option" value="Food">Food</button>
+                <button type="submit" name="option" value="Clothing">Clothing</button>
+                <button type="submit" name="option" value="Electronics">Electronics</button>
+                <button type="submit" name="option" value="Retail">Retail</button>
+                <button type="submit" name="option" value="Gaming">Gaming</button>
+                <button type="submit" name="option" value="Furniture">Furniture</button>
+            </div>
+        </div>
+    </form>
+
+
+<script>
+function selectOption(option) {
+  alert('Opção selecionada: ' + option);
+}
+</script>
+
+
+
+
+
+
+
+
+
+    <form action="/search/{{ username }}" method="get">
+        <input class="pesquisar" type="text" name="query" placeholder="Pesquisar...">
+        <button type="submit" class="pesquisar-button">Pesquisar</button>
+    </form>
+
+
+
+
+    <form action="/redirecionar_profile_page/{{ username }}" method="get">
+        <button id="profile_page" class="profile_button">oalssbkhxvahjwx wax</button>
+    </form>
+
+    <label class = "label-promo"> {{prizes}} </label>
+
+    <form id="popupForm" action="" method="">
+        <button id="promo_page" class="promo_button">Abrir Pop-up</button>
+    </form>
+
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <h2>Prize(s) CODE</h2>
+            {% for i in range(arr|length - 1) %}
+                <li>{{ arr[i] }}</li>
+            {% endfor %}
+            <button onclick="closePopup()">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('popupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que o formulário seja enviado
+            openPopup();
+        });
+
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>

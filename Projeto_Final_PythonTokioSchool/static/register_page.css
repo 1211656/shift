@@ -1,0 +1,129 @@
+.background-image {
+    position: fixed; /* ou absolute */
+    top: 0;
+    left: 0;
+    width: 100%; /* ajusta a largura conforme a tela */
+    height: 100%; /* ajusta a altura conforme a tela */
+    z-index: -1; /* coloca a imagem atrás de todo o conteúdo */
+    /*opacity: 0.5; /* opcional: ajusta a opacidade da imagem */
+}
+
+.logo-image {
+    position: absolute; /* ou fixed */
+    top: 10px; /* ajusta a posição vertical */
+    right: 50px; /* ajusta a posição horizontal */
+    width: 150px; /* ajusta a largura */
+    height: auto; /* ajusta a altura automaticamente */
+    z-index: 1; /* coloca a imagem à frente do conteúdo */
+}
+
+
+.username {
+    position: absolute; /* Ou position: absolute; */
+    left: 62.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 62.5%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+
+    background-color: white; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda sólida */
+
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 70px; /* Altura */
+}
+
+.email {
+    position: absolute; /* Ou position: absolute; */
+    left: 62.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 47.5%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+
+    background-color: white; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda sólida */
+
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 70px; /* Altura */
+}
+
+.password1 {
+    position: absolute; /* Ou position: absolute; */
+    left: 62.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 33%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+
+    background-color: white; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda sólida */
+
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 70px; /* Altura */
+}
+
+.password2 {
+    position: absolute; /* Ou position: absolute; */
+    left: 62.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 18%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+    border:none;
+    background-color: white; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda sólida */
+
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 70px; /* Altura */
+}
+
+.continuar-button{
+    position: absolute;
+    top: 90%; /* ajusta a posição vertical */
+    left: 50%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.back-button{
+    position: absolute;
+    top: 12%; /* ajusta a posição vertical */
+    left: 10%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}

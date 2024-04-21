@@ -1,0 +1,84 @@
+-- drops
+drop table Advertise;
+drop table Client;
+drop table Questao;
+drop table Resposta;
+drop table user_advertise;
+drop table Questionario;
+drop table User;
+
+
+-- remover clientes
+DELETE FROM Client;
+
+-- Inserir um novo cliente
+INSERT INTO Client (email, password) VALUES ('mcdonalds@gmail.com', '12345');
+INSERT INTO Client (email, password) VALUES ('apple@gmail.com', '123');
+INSERT INTO Client (email, password) VALUES ('asus@gmail.com', '12367');
+INSERT INTO Client (email, password) VALUES ('continente@gmail.com', '12342');
+INSERT INTO Client (email, password) VALUES ('steam@gmail.com', '123321');
+INSERT INTO Client (email, password) VALUES ('zara@gmail.com', '123323');
+INSERT INTO Client (email, password) VALUES ('zarahome@gmail.com', '1231232');
+
+-- ver o id
+SELECT last_insert_rowid();
+
+
+-- Exemplo de inserção de um anúncio
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('mcdonalds1.jpg', 'mcdonalds2.jpg', 'Oferta de Menu BigMac','Food', 'Na compra um menu e se responder às questões, oferecemos um menu BigMac até ao prazo final. ', '2024-12-31', 1);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('apple2.jpeg', 'apple1.jpg', 'Oferta de Capa','Electronics', 'Na compra um iphone e se responder às questões, oferece-mos uma capa até ao prazo final. ', '2024-12-31', 2);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('asus.jpg', 'apple1.jpg', 'Oferta de Mochila + 10% desconto','Electronics', 'Na compra de um PC tem direito a uma Mochila + 10% de desconto.', '2024-12-31', 3);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('zara1.jpeg', 'apple1.jpg', '40% desconto','Clothing', '40% desconto num máximo de 30€ gastos na loja', '2024-12-31', 4);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('steam.jpeg', 'apple1.jpg', '10% desconto','Gaming', '10% desconto em qualquer jogo', '2024-12-31', 5);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('zara-home.jpeg', 'apple1.jpg', '20€ Oferta','Furniture', '20€ Oferta numa compra mínima de 150€', '2024-12-31', 6);
+
+INSERT INTO Advertise (url_main, url_secondary, title,category, description, expirationDate, client_id)
+VALUES ('continente.jpeg', 'apple1.jpg', '20€ Oferta','Retail', '20€ Oferta numa compra mínima de 150€', '2024-12-31', 7);
+
+
+-- Inserir um novo questionário
+INSERT INTO Questionario (advertise_id) VALUES (1);
+INSERT INTO Questionario (advertise_id) VALUES (2);
+INSERT INTO Questionario (advertise_id) VALUES (3);
+INSERT INTO Questionario (advertise_id) VALUES (4);
+INSERT INTO Questionario (advertise_id) VALUES (5);
+INSERT INTO Questionario (advertise_id) VALUES (6);
+INSERT INTO Questionario (advertise_id) VALUES (7);
+
+-- Obter o ID do questionário recém-inserido
+SELECT last_insert_rowid();
+
+-- Inserir algumas questões associadas ao questionário
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 1);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 1);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 1);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 2);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 2);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 2);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 3);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 3);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 3);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 4);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 4);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 4);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 5);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 5);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 5);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 6);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 6);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 6);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Qual a sua opinião sobre o produto?', 7);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você considera o preço do produto justo?', 7);
+INSERT INTO Questao (texto, questionario_id) VALUES ('Você recomendaria este produto a um amigo?', 7);

@@ -1,0 +1,90 @@
+/* Define o tamanho e a posição da imagem de fundo */
+.background-image {
+    position: fixed; /* ou absolute */
+    top: 0;
+    left: 0;
+    width: 100%; /* ajusta a largura conforme a tela */
+    height: 100%; /* ajusta a altura conforme a tela */
+    z-index: -1; /* coloca a imagem atrás de todo o conteúdo */
+    /*opacity: 0.5; /* opcional: ajusta a opacidade da imagem */
+}
+
+/* Define o tamanho e a posição da imagem do logotipo */
+.logo-image {
+    position: absolute; /* ou fixed */
+    top: 50px; /* ajusta a posição vertical */
+    right: 90px; /* ajusta a posição horizontal */
+    width: 150px; /* ajusta a largura */
+    height: auto; /* ajusta a altura automaticamente */
+    z-index: 1; /* coloca a imagem à frente do conteúdo */
+}
+
+
+.login-button{
+    position: absolute;
+    top: 78%; /* ajusta a posição vertical */
+    left: 50%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.register-button{
+    position: absolute;
+    top: 90%; /* ajusta a posição vertical */
+    left: 50%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.email {
+    position: absolute; /* Ou position: absolute; */
+    left: 59.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 44%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+
+    background-color: white; /* Cor de fundo */
+    border: none;
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 60px; /* Altura */
+}
+
+.password {
+    position: absolute; /* Ou position: absolute; */
+    left: 59.5%;
+    transform: translateX(-50%); /* Transladar 50% do tamanho da própria largura para a esquerda */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    bottom: 31%;
+    margin: 10px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+
+    background-color: white; /* Cor de fundo */
+    border:none;
+
+
+    text-align: left; /* Alinhamento de texto */
+    width: 390px; /* Largura */
+    height: 60px; /* Altura */
+}
+

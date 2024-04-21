@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionário</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='questionario.css') }}?v=2">
+</head>
+<body class="body">
+    <img src="{{ url_for('static', filename='questions_page.jpg') }}" class="background-image">
+    <form action="/home_page/{{username}}" method="get">
+        <button id="back-button" class="back-button">Anterior</button>
+    </form>
+
+
+
+        <h1 class = "header-questao">Questão {{cont+1}}/{{ questionario.questoes|length }}</h1>
+        <div class="questions-container">
+
+            <div class="questao" id="questao">
+                <p class = "texto-questao">{{ questionario.questoes[cont].texto }}</p>
+            </div>
+
+
+            <form action="/submit_answer/{{ questionario.id }}/{{ username }}/{{ cont }}/" method="get">
+                <div class="opcoes">
+
+                        <input type="radio" id="opcao1" name="opcao" value="6">
+                        <label for="opcao1">Excelente</label><br>
+
+                        <input type="radio" id="opcao2" name="opcao" value="5">
+                        <label for="opcao2">Muito Bom</label><br>
+
+                        <input type="radio" id="opcao3" name="opcao" value="4">
+                        <label for="opcao3">Bom</label><br>
+
+                        <input type="radio" id="opcao3" name="opcao" value="3">
+                        <label for="opcao3">Normal</label><br>
+
+                        <input type="radio" id="opcao3" name="opcao" value="2">
+                        <label for="opcao3">Mau</label><br>
+
+                        <input type="radio" id="opcao3" name="opcao" value="1">
+                        <label for="opcao3">Muito Mau</label><br>
+
+                </div>
+                <br>
+
+                <button type="submit" class="submit-page"> asasacecwwadawdwadawdawdad </button>
+            </form>
+
+
+
+            <br>
+
+        </div>
+
+        <div class="contador" id="contador"></div>
+        <form action="/submit_question/{{ questionario.id }}/{{ username }}/{{ cont-1 }}" method="get">
+            <button class="left-page"> asasacece </button>
+        </form>
+        <form action="/submit_question/{{ questionario.id }}/{{ username }}/{{ cont+1 }}" method="get">
+            <button class="right-page"> asasacece </button>
+        </form>
+
+
+
+
+
+
+
+
+
+
+        <input type="hidden" id="questao_atual" name="questao_atual" value="1">
+    </form>
+
+    <script>
+        // Recebendo os dados do Flask e atribuindo a uma variável JavaScript
+        var questoes = {{ questoes | tojson }};
+
+        // Função para alternar entre as questões
+        function mostrarProximaQuestao() {
+            var questaoAtual = parseInt(document.getElementById('questao_atual').value);
+            var proximaQuestao = questaoAtual + 1;
+            document.getElementById('questao').innerHTML = '<p class="texto-questao">' + questoes[proximaQuestao].texto + '</p>';
+            document.getElementById('header-questao').innerText = 'Questão ' + proximaQuestao;
+            document.getElementById('questao_atual').value = proximaQuestao;
+        }
+
+        // Adicionar evento de clique ao botão de submeter
+        document.getElementById('submit-button').addEventListener('click', function() {
+            mostrarProximaQuestao();
+        });
+    </script>
+
+
+    <div id="mensagem"></div>
+    <div class="contador" id="contador"></div>
+
+<script>
+    // Função para desativar os botões por 5 segundos
+    function desativarBotoesPor5Segundos() {
+        // Seleciona os botões
+        var botoes = document.querySelectorAll('.left-page, .right-page');
+        var mensagemDiv = document.getElementById('mensagem');
+        var contadorDiv = document.getElementById('contador');
+        var tempoRestante = 5;
+
+
+
+        // Exibe o contador
+        contadorDiv.innerText =  tempoRestante;
+
+        // Desativa cada botão
+        botoes.forEach(function(botao) {
+            botao.disabled = true;
+        });
+
+        // Inicia o contador regressivo
+        var intervalID = setInterval(function() {
+            tempoRestante--;
+            contadorDiv.innerText =   tempoRestante;
+            if (tempoRestante <= 0) {
+                clearInterval(intervalID);
+                // Esconde a mensagem e reativa os botões
+
+                botoes.forEach(function(botao) {
+                    botao.disabled = false;
+                });
+            }
+        }, 1000); // Atualiza a cada segundo
+    }
+
+    // Chama a função para desativar os botões ao carregar a página
+    window.onload = desativarBotoesPor5Segundos;
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

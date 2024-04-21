@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_page.css') }}?v=2">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='1.jpg') }}" class="background-image">
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+    <form action ="/redirecionar_home_page" method="get">
+        <input class = "email" type="text" id="email" name="email">
+        <input class = "password" type="text" id="password" name="password">
+        <button class="login-button">Continuar</button>
+    </form>
+    <form action="/redirecionar_register_page" method="post">
+        <button id="register-button" class="register-button">Não tem uma conta? Registe-se aqui!</button>
+    </form>
+
+
+</body>
+</html>
+

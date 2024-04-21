@@ -1,0 +1,269 @@
+
+
+
+
+html, body {
+    height: auto; /* ou height: 100%; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ocultar a rolagem horizontal */
+}
+
+.body {
+    min-height: 100vh; /* Garante que o conteúdo da página tenha pelo menos a altura da janela do navegador */
+}
+
+.background-image {
+    /*position: fixed; /* ou absolute */
+
+    top: -30px;
+    left: 0;
+    width: 100%; /* ajusta a largura conforme a tela */
+    height: 100%; /* ajusta a altura conforme a tela */
+    z-index: -2; /* coloca a imagem atrás de todo o conteúdo */
+    /*opacity: 0.5; /* opcional: ajusta a opacidade da imagem */
+    background-size: cover; /* ajusta o tamanho da imagem para cobrir toda a área */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    background-position: center; /* centraliza a imagem na tela */
+    z-index:0;
+}
+.logo-image {
+    position: absolute; /* ou fixed */
+    top: 60px; /* ajusta a posição vertical */
+    right: 30px; /* ajusta a posição horizontal */
+    width: 100px; /* ajusta a largura */
+    height: auto; /* ajusta a altura automaticamente */
+    z-index: 1; /* coloca a imagem à frente do conteúdo */
+}
+.back-button{
+    position: absolute;
+    top: 10%; /* ajusta a posição vertical */
+    left: 6%; /* ajusta a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.body{
+    background-color:#FFDE59;
+}
+
+.advertise-image{
+    /*display: inline-block;*/
+    position: absolute;
+    margin-top: 50px; /* ajuste a margem superior conforme necessário */
+    margin-left: 50px; /* ajuste a margem esquerda conforme necessário */
+    top: 10%; /* ajusta a posição vertical */
+    z-index: 0;
+    /*margin: 10px; /* Espaçamento entre as imagens */
+    max-width: 200px; /* Largura máxima das imagens */
+    height: auto; /* Mantenha a proporção da altura */
+}
+
+.advertise-image-container {
+    display: flex; /* Use flexbox para alinhar as imagens lado a lado */
+    justify-content: left; /* Centralize as imagens horizontalmente */
+    flex-wrap: wrap; /* Permita que as imagens quebrem para a próxima linha se necessário */
+
+}
+
+.mcdonalds{
+    position: relative;
+    margin-top: 50px; /* ajuste a margem superior conforme necessário */
+    margin-left: 10%; /* ajuste a margem esquerda conforme necessário */
+    top: 30%; /* ajusta a posição vertical */
+    border-radius: 5px;
+
+    border:  30px solid white;
+    box-sizing:border-box;
+    /*margin: 10px; /* Espaçamento entre as imagens */
+    max-width: 250px; /* Largura máxima das imagens */
+    height: 280px; /* Mantenha a proporção da altura */
+
+}
+
+
+
+
+.title-button {
+    position: relative;
+    bottom:20px; /* Distância do botão ao fundo do contêiner */
+    /* Centralizando o botão horizontalmente */
+    margin-left: 30%; /* ajuste a margem esquerda conforme necessário */
+    padding: 10px 20px; /* Padding do botão */
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: left;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    /* Adicione mais estilos conforme necessário */
+}
+.title-button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência ao passar o mouse */
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.profile_button{
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    top: 12%; /* ajusta a posição vertical */
+    right: 22.7%; /* ajusta a posição horizontal */
+    max-width: 110px; /* Largura máxima das imagens */
+    height: 110px; /* Mantenha a proporção da altura */
+    border: none;
+    z-index: 2; /* coloca o botão à frente das imagens */
+}
+
+.promo_button{
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    top: 12%; /* ajusta a posição vertical */
+    right: 14.7%; /* ajusta a posição horizontal */
+    max-width: 110px; /* Largura máxima das imagens */
+    height: 110px; /* Mantenha a proporção da altura */
+    border: none;
+    z-index: 2; /* coloca o botão à frente das imagens */
+
+}
+
+
+.filter{
+    position:absolute;
+    top: 10%;
+    left:220px;
+    height: 80px;
+    width:100px;
+    border-radius:5px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+    border-color:white;
+
+}
+
+
+
+.label-promo{
+    position: absolute;
+    color:white;
+    background-color:red;
+    border-radius: 60%;
+    width: 40px; /* Ajustando a largura para tornar um círculo */
+    height: 40px; /* Ajustando a altura para tornar um círculo */
+    display: inline-block; /* Para garantir que o elemento tenha dimensões */
+    text-align: center; /* Alinhando o texto ao centro */
+    line-height: 40px; /* Ajustando a altura da linha para centralizar verticalmente o texto */
+    font-family: 'Open Sans', sans-serif;
+    right: 16.7%;
+    top: 10%;
+    z-index: 2;
+
+
+}
+
+.ad-container {
+    border-radius: 5px; /* Define um raio circular */
+    border: 2px solid #E4DCC9; /* Adiciona uma borda sólida de 2 pixels cinza */
+    padding: 2px;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 20%; /* ajusta a posição vertical */
+    right: 10.7%; /* ajusta a posição horizontal */
+    text-align:right;
+}
+
+/* Estilos para o dropdown */
+.dropdown {
+    top:11%;
+    left:15%;
+    height:80px;
+    width:100px;
+    position: absolute;
+  display: inline-block;
+}
+
+/* Estilos para o botão principal */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  border-color: white;
+  cursor: pointer;
+
+}
+
+/* Estilos para o conteúdo do dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Estilos para os botões dentro do dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  background-color: #f9f9f9;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+/* Estilos para os botões quando passa o mouse sobre eles */
+.dropdown-content button:hover {
+  background-color: white;
+}
+
+/* Mostrar o conteúdo do dropdown quando o botão principal é clicado */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.pesquisar{
+    position:absolute;
+    top:13.5%;
+    left:35%;
+    width: 100%
+    border:none;
+    font-size:30px;
+}
+
+.pesquisar-button{
+    position:absolute;
+    top:12.5%;
+    left:26.5%;
+    height:60px;
+    border:none;
+    background-color:transparent;
+    color:transparent;
+}

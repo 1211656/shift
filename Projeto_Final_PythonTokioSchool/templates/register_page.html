@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register_page.css') }}?v=2">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='register.jpg') }}" class="background-image">
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo-image">
+    <form action="/redirecionar_home_page_from_register" method="get">
+        <input class = "username" type="text" id="username" name="username">
+        <input class = "email" type="text" id="email" name="email">
+        <input class = "password1" type="text" id="password1" name="password1">
+        <input class = "password2" type="text" id="password2" name="password2">
+        <button id="continuar-button" class="continuar-button">Continuar</button>
+    </form>
+    <form action="/redirecionar_login_page" method="post">
+        <button id="back-button" class="back-button">Anterior</button>
+    </form>
+</body>
+</html>
