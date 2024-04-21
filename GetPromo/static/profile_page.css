@@ -10,7 +10,7 @@
 
 .logo-image {
     position: absolute; /* ou fixed */
-    top: 50px; /* ajusta a posição vertical */
+    top: 40px; /* ajusta a posição vertical */
     right: 90px; /* ajusta a posição horizontal */
     width: 150px; /* ajusta a largura */
     height: auto; /* ajusta a altura automaticamente */

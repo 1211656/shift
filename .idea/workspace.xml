@@ -28,7 +28,88 @@
       <change afterPath="$PROJECT_DIR$/../sem4pi-23-24-2dk5-main/jobs4u.app1/src/main/java/domain/user/employee/Employee.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sem4pi-23-24-2dk5-main/jobs4u.app1/src/main/java/domain/user/employee/LanguageEngineer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sem4pi-23-24-2dk5-main/jobs4u.app1/src/main/java/domain/user/employee/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/.idea/Projeto_Final_PythonTokioSchool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/database/dados.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/database/insert.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/src/builders/UserBuilder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/src/controller/LoginController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/src/controller/RegisterController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/src/domain/User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/apple1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/apple2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/asus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/continente.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/dia_da_mae.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/home_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/home_page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/login_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/mcdonalds1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/mcdonalds2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/ofertas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/profile_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/profile_page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/questionario.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/questions_page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/register_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/steam.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/zara-home.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/static/zara1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/templates/home_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/templates/login_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/templates/profile_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/templates/questionario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GetPromo/templates/register_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Final_PythonTokioSchool/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/Projeto_Shift_Final_JosePina6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/database/dados.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/database/insert.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/src/builders/UserBuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/src/controller/LoginController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/src/controller/RegisterController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/src/domain/User.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/apple1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/apple2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/asus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/continente.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/dia_da_mae.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/home_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/home_page.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/login_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/mcdonalds1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/mcdonalds2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/ofertas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/profile_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/profile_page.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/questionario.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/questions_page.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/register.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/register_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/steam.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/zara-home.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/static/zara1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/templates/home_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/templates/login_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/templates/profile_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/templates/questionario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_Shift_Final_JosePina6/templates/register_page.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +150,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/josepedropina/Documents/shift&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="shift" />
       <option name="ENV_FILES" value="" />
@@ -84,6 +165,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="shift" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,5 +221,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

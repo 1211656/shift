@@ -28,7 +28,7 @@
         <img src="{{ url_for('static', filename=advertises.url_main) }}" class="mcdonalds" style="width: 100%; height: 100%; ">
         <form action="/questionario/{{ advertises.id }}/{{ username }}" method = "get">
             <button id="mcdonalds" class="title-button" style="position: absolute; bottom: 30px; left: 0%; transform: translateX(0%);">
-                {{ advertises.title }} <br> <br> {{ advertises.description }}<br><br> Prazo Final: {{ advertises.expirationDate }}</button>
+                <span class="title-highlight">{{ advertises.title }}</span> <br> <br> {{ advertises.description }}<br><br> Prazo Final: {{ advertises.expirationDate }}</button>
         </form>
             <br>
     </div>

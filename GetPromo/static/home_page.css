@@ -181,8 +181,13 @@ html, body {
 
 .ad-container {
     border-radius: 5px; /* Define um raio circular */
-    border: 2px solid #E4DCC9; /* Adiciona uma borda sólida de 2 pixels cinza */
+    border: 2px solid orange; /* Adiciona uma borda sólida de 2 pixels cinza */
     padding: 2px;
+}
+
+.title-highlight{
+    font-weight: bold;
+    font-size:28px;
 }
 
 
